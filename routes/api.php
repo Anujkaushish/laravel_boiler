@@ -14,5 +14,17 @@ Route::group(['prefix' => 'v1', 'middleware' => ['json', 'api']], function () {
 
         // Route::post('cards', 'UserController@addCard')->name('add_card');
         // Route::get('cards', 'UserController@cards')->name('fetch_card');
+        Route::resource('bikes', 'BikesAPIController');
+        Route::resource('college', 'CollegeAPIController');
+        Route::resource('coachings', 'CoachingAPIController');
+
+
     });
 });
+
+
+
+
+
+
+
